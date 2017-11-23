@@ -1,0 +1,8 @@
+E:\codingdojo\csharp\wk3\RandomPasscode\bin\Debug\netcoreapp1.1\RandomPasscode.deps.json
+E:\codingdojo\csharp\wk3\RandomPasscode\bin\Debug\netcoreapp1.1\RandomPasscode.runtimeconfig.json
+E:\codingdojo\csharp\wk3\RandomPasscode\bin\Debug\netcoreapp1.1\RandomPasscode.runtimeconfig.dev.json
+E:\codingdojo\csharp\wk3\RandomPasscode\bin\Debug\netcoreapp1.1\RandomPasscode.dll
+E:\codingdojo\csharp\wk3\RandomPasscode\bin\Debug\netcoreapp1.1\RandomPasscode.pdb
+E:\codingdojo\csharp\wk3\RandomPasscode\obj\Debug\netcoreapp1.1\RandomPasscode.AssemblyInfo.cs
+E:\codingdojo\csharp\wk3\RandomPasscode\obj\Debug\netcoreapp1.1\RandomPasscode.dll
+E:\codingdojo\csharp\wk3\RandomPasscode\obj\Debug\netcoreapp1.1\RandomPasscode.pdb

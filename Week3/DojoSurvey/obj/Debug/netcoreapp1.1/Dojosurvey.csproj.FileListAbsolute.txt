@@ -6,3 +6,11 @@ E:\codingdojo\csharp\wk3\Dojosurvey\bin\Debug\netcoreapp1.1\Dojosurvey.pdb
 E:\codingdojo\csharp\wk3\Dojosurvey\obj\Debug\netcoreapp1.1\Dojosurvey.AssemblyInfo.cs
 E:\codingdojo\csharp\wk3\Dojosurvey\obj\Debug\netcoreapp1.1\Dojosurvey.dll
 E:\codingdojo\csharp\wk3\Dojosurvey\obj\Debug\netcoreapp1.1\Dojosurvey.pdb
+C:\Users\Peter\codingdojo\csharp\csharpassignments\week3\DojoSurvey\bin\Debug\netcoreapp1.1\Dojosurvey.deps.json
+C:\Users\Peter\codingdojo\csharp\csharpassignments\week3\DojoSurvey\bin\Debug\netcoreapp1.1\Dojosurvey.runtimeconfig.json
+C:\Users\Peter\codingdojo\csharp\csharpassignments\week3\DojoSurvey\bin\Debug\netcoreapp1.1\Dojosurvey.runtimeconfig.dev.json
+C:\Users\Peter\codingdojo\csharp\csharpassignments\week3\DojoSurvey\bin\Debug\netcoreapp1.1\Dojosurvey.dll
+C:\Users\Peter\codingdojo\csharp\csharpassignments\week3\DojoSurvey\bin\Debug\netcoreapp1.1\Dojosurvey.pdb
+C:\Users\Peter\codingdojo\csharp\csharpassignments\week3\DojoSurvey\obj\Debug\netcoreapp1.1\Dojosurvey.AssemblyInfo.cs
+C:\Users\Peter\codingdojo\csharp\csharpassignments\week3\DojoSurvey\obj\Debug\netcoreapp1.1\Dojosurvey.dll
+C:\Users\Peter\codingdojo\csharp\csharpassignments\week3\DojoSurvey\obj\Debug\netcoreapp1.1\Dojosurvey.pdb

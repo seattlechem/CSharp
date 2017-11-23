@@ -9,8 +9,7 @@ namespace Dojosurvey.Controllers
     
     public class HomeController: Controller
     {
-        public object SelectListItem {get; set;}
-        
+    
         [HttpGet]
         [Route("")]
         public IActionResult Index()
@@ -26,6 +25,16 @@ namespace Dojosurvey.Controllers
 
             ViewBag.Times = HttpContext.Session.GetInt32("Times");
 
+            List<string> errors = new List<string>();
+            if(errors != null)
+            {
+                foreach(string error in errors)
+                {
+                    ViewBag.Errors += error;
+                }
+
+            }
+
 
             return View();
         }
@@ -37,9 +46,20 @@ namespace Dojosurvey.Controllers
             int? numTimes = HttpContext.Session.GetInt32("Times");
             //don't need to check if numTimes is null or not because index is checking this.
             numTimes++;
+            ViewBag.Errors = new List<string>();
+            
             HttpContext.Session.SetInt32("Times", (int)numTimes);
 
-            HttpContext.Session.SetString("Name", name);
+
+            if(name == null)
+            {
+                ViewBag.Errors.Add("Please enter name");
+        
+            }
+            else
+            {
+                HttpContext.Session.SetString("Name", name);
+            }
             HttpContext.Session.SetString("Location", DojoLocation);
             HttpContext.Session.SetString("Language", favoriteLanguage);
             HttpContext.Session.SetString("Comment", commentBox);
@@ -51,6 +71,7 @@ namespace Dojosurvey.Controllers
         [Route("ShowResults")]
         public IActionResult ShowResults()
         {
+        
             ViewBag.Name = HttpContext.Session.GetString("Name");
             ViewBag.Location = HttpContext.Session.GetString("Location");
             ViewBag.Language = HttpContext.Session.GetString("Language");

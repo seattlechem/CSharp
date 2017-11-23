@@ -1,0 +1,8 @@
+E:\codingdojo\csharp\wk3\NinjaGold\bin\Debug\netcoreapp1.1\NinjaGold.deps.json
+E:\codingdojo\csharp\wk3\NinjaGold\bin\Debug\netcoreapp1.1\NinjaGold.runtimeconfig.json
+E:\codingdojo\csharp\wk3\NinjaGold\bin\Debug\netcoreapp1.1\NinjaGold.runtimeconfig.dev.json
+E:\codingdojo\csharp\wk3\NinjaGold\bin\Debug\netcoreapp1.1\NinjaGold.dll
+E:\codingdojo\csharp\wk3\NinjaGold\bin\Debug\netcoreapp1.1\NinjaGold.pdb
+E:\codingdojo\csharp\wk3\NinjaGold\obj\Debug\netcoreapp1.1\NinjaGold.AssemblyInfo.cs
+E:\codingdojo\csharp\wk3\NinjaGold\obj\Debug\netcoreapp1.1\NinjaGold.dll
+E:\codingdojo\csharp\wk3\NinjaGold\obj\Debug\netcoreapp1.1\NinjaGold.pdb

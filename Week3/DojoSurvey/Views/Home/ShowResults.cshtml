@@ -9,6 +9,10 @@
 </head>
 <body>
     <div class="Main">
+        @foreach(var error in ViewBag.Errors)
+        {
+            error
+        }
         <h3>Your Name: @ViewBag.Name</h3>
         <h3>Your Location: @ViewBag.Location</h3>
         <h3>Your Language: @ViewBag.Language</h3>

@@ -1,0 +1,8 @@
+E:\codingdojo\csharp\wk3\JsonAjax\bin\Debug\netcoreapp1.1\JsonAjax.deps.json
+E:\codingdojo\csharp\wk3\JsonAjax\bin\Debug\netcoreapp1.1\JsonAjax.runtimeconfig.json
+E:\codingdojo\csharp\wk3\JsonAjax\bin\Debug\netcoreapp1.1\JsonAjax.runtimeconfig.dev.json
+E:\codingdojo\csharp\wk3\JsonAjax\bin\Debug\netcoreapp1.1\JsonAjax.dll
+E:\codingdojo\csharp\wk3\JsonAjax\bin\Debug\netcoreapp1.1\JsonAjax.pdb
+E:\codingdojo\csharp\wk3\JsonAjax\obj\Debug\netcoreapp1.1\JsonAjax.AssemblyInfo.cs
+E:\codingdojo\csharp\wk3\JsonAjax\obj\Debug\netcoreapp1.1\JsonAjax.dll
+E:\codingdojo\csharp\wk3\JsonAjax\obj\Debug\netcoreapp1.1\JsonAjax.pdb
