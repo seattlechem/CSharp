@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Current Auctions";
+}
+@model AuctionApp.Models.AuctionIndex
+
+<h1>Current Auctions</h1>
+<h3>@Model.User.first_name</h3>
+<a href="logout">Logout</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Seller</th>
+            <th>Top Bid</th>
+            <th>Time Remaining</th>
+            <th></th>    
+        </tr>
+    </thead>
+    
+
+    <tbody>
+    @foreach(var auction in Model.Auctions)
+    {
+        <tr>
+            <td><a href="display/@auction.auction_id">@auction.productName</a></td>
+            <td>@Model.Users.SingleOrDefault(u => u.user_id == @auction.user_id).first_name</td>
+            @if(Model.Bids.Where(b => b.auction_id == @auction.auction_id).Count() == 0)
+            {
+                <td>$@auction.startingBid</td>
+            }
+            else
+            {
+                <td>$@Model.Bids.Where(b => b.auction_id == @auction.auction_id).FirstOrDefault().bidAmount</td>
+            }
+            
+            <td>@((Model.Auctions.SingleOrDefault(a => a.auction_id == @auction.auction_id)
+                                                .endDate - DateTime.Now).Days) Day(s)</td>
+    
+            @if(Model.Users.SingleOrDefault(u => u.user_id == @auction.user_id)
+                                                    .user_id == Model.User.user_id)
+            {
+                <td><a href="delete/@auction.auction_id">Delete</a></td>
+            }
+            
+            else 
+            {
+                <td></td>
+            }     
+        </tr>
+    }
+    
+
+    </tbody>
+</table>
+<div class="bottomContainer">
+        <div class="btnContainer">
+            <button type="submit"><a href="/add">New Auction</a></button>
+            
+
+        </div>
+        <div class="walletContainer">
+            <p>Your Current Wallet: $@Model.User.wallet</p>
+
+        </div>
+    </div>   

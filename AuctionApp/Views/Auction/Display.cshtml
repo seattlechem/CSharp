@@ -1,0 +1,85 @@
+@model AuctionApp.Models.AuctionIndex
+
+<div class="mainContainer">
+    <div id="upperMenu">
+        <div id="productName">
+            <p>@Model.Auctions.FirstOrDefault().productName</p>
+            
+        </div>
+        <div id="creatorName">
+            <h3>@Model.Users.SingleOrDefault(u => u.user_id == (int)@Model.Auctions
+                .FirstOrDefault().user_id).first_name</h3>
+        </div>
+        <div id="menu">
+            <p><a href="/main">Home</a> | <a href="/logout">Logout</a></p>
+
+        </div>
+    </div>
+    <div id="centerContainer">
+        <h2>Time Remaining: @((Model.Auctions.FirstOrDefault().endDate-DateTime.Today).Days) day(s)</h2>
+        <br>
+        <h3>@Model.Auctions.FirstOrDefault().description</h3>
+    </div>
+
+    <div id="bottomContainer">
+        <div id="highestBid">
+            <h3>Current Highest Bid:</h3>
+            <br>
+            @if(Model.Bids.Count() == 0)
+            {
+                <h3>$@Model.Auctions.FirstOrDefault().startingBid</h3>
+            }
+            else
+            {
+                <h3>$@Model.Bids.FirstOrDefault().bidAmount</h3>
+            }
+        </div>
+    </div>
+
+    <div id="highestBidder">
+            @if(Model.Bids.Count() == 0)
+            {
+                <h3>By: No bidder yet</h3>
+            }
+            else
+            {
+                
+                <h3>By: @Model.Users.SingleOrDefault(u => u.user_id == (int)@Model.Bids
+                    .FirstOrDefault().user_id).first_name @Model.Users.SingleOrDefault(u => u.user_id == 
+                    (int)@Model.Bids.FirstOrDefault().user_id).last_name
+                </h3>
+            }
+            
+    
+    </div>
+    <div id="inputBox">
+        <form asp-action="Bid" asp-controller="Auction" method="post">
+            <span asp-validation-for="BidAmount"></span>
+            <input type="text" name="BidAmount" placeholder="Your bid goes here..">
+
+            <input type="hidden" name="Auctions" value="@Model.Auctions">
+            <input type="hidden" name="Users" value="@Model.Users">
+            <input type="hidden" name="User" value="@Model.User">
+            <input type="hidden" name="Bids" value="@Model.Bids">
+
+        
+
+            <input type="submit" value="Bid!!">
+
+
+        </form>
+
+    </div>
+    
+
+    
+    
+        
+</div>  
+     
+
+    
+
+
+
+</div>

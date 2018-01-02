@@ -1,0 +1,32 @@
+/*Write all of your CSS here*/
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 600px;
+    justify-content: space-around;
+    
+}
+
+.container_item {
+   padding: 1em;
+    
+}
+
+.container_item:first-child {
+    background-color: red;
+    
+}
+.container_item:nth-child(){
+    background-color: white;
+
+}
+
+.container_item:last-child{
+    background-color: yellow;
+}
+
